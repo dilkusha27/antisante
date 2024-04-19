@@ -1,0 +1,242 @@
+@charset "UTF-8";
+
+/* MAIN MENU 영역 시작 */
+
+#middle {
+    position: relative;
+    height: 1220px;
+}
+
+nav {
+    display: inline-block;
+    position: relative;
+    top: -600px;
+    width: 180px;
+    height: 600px;
+    z-index: 10;
+}
+
+.mainMenu a {
+    text-decoration: none;
+    color: #000;
+}
+
+nav>ul>li {
+    font-size: 30px;
+    margin-bottom: 30px;
+    margin-left: 15px;
+}
+
+nav>ul>li>a {
+    text-shadow: 2px 2px 2px #ccc,
+                 2px -2px 2px #ccc;
+}
+
+#best:hover>a {
+    transition: 0.3;
+    font-size: 50px;
+    text-shadow: 2px 2px 2px #ccc,
+                 2px -2px 2px #ccc;
+}
+
+nav>ul>li:hover>a {
+    font-size: 25px;
+    text-shadow: none;
+    transition: 1s;
+}
+
+nav>ul>li>ul {
+    display: none;
+    position: absolute;
+    margin-bottom: 10px;
+    font-size: 20px;
+    top: -60px;
+    left: 150px;
+}
+
+nav>ul>li:hover>ul {
+    display: block;
+}
+
+nav>ul>li>ul>li>a {
+    font-weight: 300;
+    margin-bottom: 5px;
+    text-shadow: 1px 1px 3px rgba(255,255,255,0.3),
+                 1px -1px 3px rgba(255,255,255,0.3),
+                 -1px -1px 3px rgba(255,255,255,0.3),
+                 -1px 1px 3px rgba(255,255,255,0.3);
+}
+
+nav>ul>li>ul>li>a:hover {
+    text-decoration: underline;
+}
+
+/* MAIN MENU 영역 종료 */
+/* VISUALBLOCK 영역 시작 */
+
+.visualBlock{
+    display: inline-block;
+    width: 750px;
+    height: 750px;
+    position: relative;
+    margin-top: 100px;
+    margin-left: 50px;
+    background-image: url(../images/background1.jpg);
+    background-size: cover;
+}
+
+.newBrand {
+    display: inline-block;
+    width: 350px;
+    height: 650px;
+    background-color: #f00;
+    position: relative;
+    top: 60px;
+    left: 40px;
+    z-index: 5;
+    box-shadow: -10px -10px 10px rgba(0,0,0,0.3),
+                -10px 10px 10px rgba(0,0,0,0.3);
+}
+
+.discountInfo {
+    position: relative;
+    top: -530px;
+    left: 340px;
+    display: inline-block;
+    width: 450px;
+    height: 250px;
+    background-color: #0f0;
+    z-index: 10;
+    box-shadow: 10px -10px 10px rgba(0,0,0,0.3),
+                -10px 0px 10px rgba(0,0,0,0.3);
+}
+
+.newLookbook {
+    position: relative;
+    top: -550px;
+    left: 360px;
+    display: inline-block;
+    width: 300px;
+    height: 300px;
+    background-color: #00f;
+    z-index: 15;
+    box-shadow: 10px 10px 10px rgba(0,0,0,0.3),
+                10px 0px 10px rgba(0,0,0,0.3);
+}
+
+.visualBlock>div {
+    transition: 0.7s;
+}
+
+.visualBlock>div:hover {
+    z-index: 100;
+    width: 400px;
+    height: 700px;
+}
+
+.newLookbook {
+    background-image: url(../images/);
+}
+
+.newLookbook h3, .newLookbook p{
+    display: none;
+}
+
+.newLookbook:hover {
+    top:-750px;
+    left: 250px;
+    background-image: url(../images/uniformBridge.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 40% 0;
+}
+
+.newLookbook:hover>h3, .newLookbook:hover>p {
+    display: block;
+    color: white;
+    font-size: 15px;
+    position: relative;
+    top: 10px;
+    left: 10px;
+
+}
+
+.newLookbook:hover>h3 {
+    text-decoration: underline;
+    font-size: 25px;
+}
+
+/* VISUALBLOCK 영역 종료 */
+
+/* NOTICE 영역 시작 */
+
+.noticeCs {
+    position: relative;
+    top: -500px;
+    width: 100%;
+    height: 270px;
+    margin: 15px;
+}
+
+#notice, .csInfo1, .csInfo2 {
+    display: inline-block;
+}
+
+#notice {
+    width: 550px;
+    position: relative;
+}
+
+#notice h2 {
+    font-size: 30px;
+    border-bottom: 1px solid #000;
+    padding-bottom: 10px;
+}
+
+#notice ul {
+    margin-top: 10px;
+}
+
+#notice li {
+    list-style: inside;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+#notice time{
+    float: right;
+    font-weight: 700;
+}
+
+#notice>a {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+}
+.csInfo1 {
+    text-align: right;
+    position: absolute;
+    top: 0;
+    right: 20px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #000;
+    width: 350px;
+}
+
+.csInfo1 h2 {
+    font-size: 40px;
+}
+
+.csInfo2 {
+    text-align: right;
+    position: absolute;
+    top: 110px;
+    right: 20px;
+}
+
+.csInfo2 li {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+/* NOTICE 영역 종료 */

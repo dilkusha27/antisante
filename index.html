@@ -4,15 +4,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="common.css">
-    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/index.css">
 </head>
 <body>
     <header id="header">
         <!-- LOGO 시작 -->
         <h1 class="logo">
             <a href="index.html">
-                <img src="" alt="logo">
+                <img src="images/logo_trial-removebg-preview.png" alt="logo">
             </a>
         </h1>
         <!-- LOGO 종료 -->
@@ -22,13 +22,20 @@
             <li><a href="#">Likes</a></li>
             <li><a href="#">Cart</a></li>
             <li><a href="#">Log In</a></li>
+            <li><a href="#">Sign Up</a></li>
         </ul>
         <!-- 개인정보, 찜 목록, 카트, 로그인 종료 -->
-        <!-- MAIN MENU 시작 -->                        
+        <div id="deco1">
+        </div>
+    </header>
+    <!-- HEADER 종료 -->
+    <!-- MIDDLE PART 시작 -->
+    <div id="middle">
+        <!-- MAIN MENU 영역 시작 -->
         <nav>
             <h2 class="hidden">메인 메뉴</h2>
             <ul class="mainMenu">
-                <li><a href="#">BEST</a></li>
+                <li id="best"><a href="#">BEST</a></li>
                 <li><a href="#">TOP</a>
                     <ul class="top">
                         <li><a href="#">Knit / Sweaters</a></li>
@@ -93,58 +100,59 @@
                 </li>
             </ul>
         </nav>
-        <!-- MAIN MENU 종료 -->
-    </header>
-    <!-- HEADER 종료 -->
-    <!-- VISUAL 시작 -->
-    <div class="visualBlock">
-        <div class="newBrand">
-            
-        </div>
-        <div class="saleInfo">
+        <!-- MAIN MENU 영역 종료 -->
+        <!-- VISUALBLOCK 영역 시작 -->
+        <div class="visualBlock">
+            <div class="newBrand">
+                
+            </div>
+            <div class="discountInfo">
 
+            </div>
+            <div class="newLookbook">
+                <h3>Uniform Bridge</h3>
+                <p>24SS COLLECTIONS</p>
+            </div>   
         </div>
-        <div class="newLookbook">
-
-        </div>   
+        <!-- VISUALBLOCK 영역 종료 -->
+        <!-- NOTICE 영역 시작 -->    
+        <div class="noticeCs">
+            <section id="notice">
+                <h2><a href="#">NOTICE</a></h2>
+                <ul>
+                    <li><a href="#">환불 정책 변경 안내</a>
+                        <time datetime="2024-04-02">2024.04.02</time>
+                    </li>
+                    <li><a href="#">포인트 제도 일부 변경 안내</a>
+                        <time datetime="2024-03-15">2024.03.15</time>
+                    </li>
+                    <li><a href="#">입점 업체의 직거래 유도 관련 주의 안내</a>
+                        <time datetime="2024-03-11">2024.03.11</time>
+                    </li>
+                    <li><a href="#">겨울철 포장용 테이프 사용 변경 안내</a>
+                        <time datetime="2024-01-02">2024.01.02</time>
+                    </li>
+                    <li><a href="#">택배 없는 날 및 공휴일로 인한 배송 지연 안내</a>
+                        <time datetime="2023-12-23">2023.12.23</time>
+                    </li>
+                </ul>
+                <a href="#" class="more" title="공지사항 더보기">MORE</a>
+            </section>
+            <div class="csInfo1">
+                <h2>1544-XXXX</h2>
+                <p>오전9시~오후6시 운영</p>
+                <p>토,일,휴일 휴무</p> 
+            </div>
+            <div class="csInfo2">
+                <ul>
+                    <li>전화 전 자주 묻는 질문을 확인하세요.</li>
+                    <li>1:1문의를 통해서도 상담이 가능합니다.</li>
+                    <li>상품 문의는 각 상품 Q&A를 이용하세요.</li>
+                </ul>
+            </div>
+        </div>
+        <!-- NOTICE 영역 종료 --> 
     </div>
-    <!-- VISUAL 종료 -->
-    <!-- CONTENTS 시작 -->    
-    <div class="noticeCs">
-        <section id="notice">
-            <h2><a href="#notice">NOTICE</a></h2>
-            <ul>
-                <li><a href="#">환불 정책 변경 안내</a>
-                    <time datetime="2024-04-02">2024.04.02</time>
-                </li>
-                <li><a href="#">포인트 제도 일부 변경 안내</a>
-                    <time datetime="2024-03-15">2024.03.15</time>
-                </li>
-                <li><a href="#">입점 업체의 직거래 유도 관련 주의 안내</a>
-                    <time datetime="2024-03-11">2024.03.11</time>
-                </li>
-                <li><a href="#">겨울철 포장용 테이프 사용 변경 안내</a>
-                    <time datetime="2024-01-02">2024.01.02</time>
-                </li>
-                <li><a href="#">택배 없는 날 및 공휴일로 인한 배송 지연 안내</a>
-                    <time datetime="2023-12-23">2023.12.23</time>
-                </li>
-            </ul>
-            <a href="#" class="more" title="공지사항 더보기">MORE</a>
-        </section>
-        <div class="csInfo1">
-            <h2>1544-XXXX</h2>
-            <p>오전9시~오후6시 운영 / 토,일,휴일 휴무</p>
-        </div>
-        <div class="csInfo2">
-            <ul>
-                <li>전화 전 자주 묻는 질문을 확인하세요.</li>
-                <li>1:1문의를 통해서도 상담이 가능합니다.</li>
-                <li>상품 문의는 각 상품 Q&A를 이용하세요.</li>
-            </ul>
-        </div>
-    </div>
-    <!-- CONTENTS 종료 -->
     <!-- FOOTER 시작 -->
     <footer id="footer">
         <div class="footerInner">
@@ -159,8 +167,7 @@
             <p class="copyright">Copyright since &copy; 2024 by Web "" CORPORATION ALL RIGHTS RESERVED.</p>
             <address>
                 <span>서울 서초구 서초대로77길 41 대동2빌딩 9층</span>
-                <span>· 전화 : 02-XXX-XXXX</span>
-                <span>· E-MAIL : master@"".com</span>
+                <span>· 전화 : 02-XXX-XXXX / · E-MAIL : master@"".com</span>
             </address>
         </div>
     </footer>

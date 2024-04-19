@@ -1,0 +1,151 @@
+@charset "UTF-8";
+
+* {
+    margin: 0;
+    padding: 0;
+} 
+
+ul {
+    list-style: none;
+}
+
+fieldset {
+    border: 0;
+}
+
+a {
+    text-decoration: none;
+    color: #000;
+}
+/* 숨김 컨텐츠 */
+.hidden, legend, caption {
+    position: absolute;
+    left: -9999px;
+}
+
+/* 전체적인 레이아웃 */
+
+#header, #middle, #footer {
+    width: 1024px;
+    margin: 0 auto;
+    box-sizing: border-box;
+}
+
+/* 헤더 영역 */
+
+#header {
+    position: relative;
+}
+
+/* 로고 영역 */
+.logo {
+    display: inline-block;
+    width: 200px;
+    height: 200px;
+    text-align: center;
+    line-height: 160px;
+    position: relative;
+    left: 20px;
+    top: 20px;
+    overflow: hidden;
+}
+
+.logo img {
+    width: 200px;
+    height: 200px;
+    position: relative;
+    transition: 0.3s;
+
+}
+
+.logo img:hover {
+    width: 210px;
+    height: 210px;
+}
+
+/* infoLink 영역 */
+
+.infoLink {
+    float: right;
+    overflow: hidden;
+    height: 200px;
+    line-height: 200px;
+}
+
+.infoLink li {
+    display: inline-block;
+    padding: 0 15px;
+
+}
+
+.infoLink a {
+    font-weight: bold;
+    padding: 0 15px;
+    text-decoration: none;
+    color: #000;
+
+}
+
+.infoLink a:hover {
+    text-decoration: underline;
+}
+
+/* deco1 영역 시작 */
+
+#deco1 {
+    background-image: url(../images/desert-7915031_1280.jpg);
+    background-position: 0 center;
+    position: relative;
+    margin-top: 20px;
+    height: 200px;
+    overflow: hidden;
+    width: cover;
+}
+
+/* deco1 영역 종료 */
+
+/* FOOTER 영역 시작 */
+
+.footerInner {
+    background-color: rgba(100, 100, 100, 1);
+    border-radius: 15px;
+    height: 30px;
+    padding-top: 10px;
+    padding-bottom: 5px;
+    padding-left: 70px;
+}
+
+.footerInner ul {
+    margin: auto;
+}
+
+.footerInner li {
+    margin: auto;
+    display: inline-block;
+    border-right: 1px solid #fff;
+    text-align: center;
+}
+
+.footerInner li:last-child {
+    border-right: none;
+}
+
+.footerInner a {
+    color: white;
+    font-size: 20px;
+    margin: 5px 60px;
+    font-weight: bold;
+}
+
+.copyright, .footerInner address {
+    display: block;
+    margin: 10px 20px;
+    text-align: center;
+    font-style: normal;
+    position: relative;
+    top: 20px;
+    right: 45px;
+}
+
+
+/* FOOTER 영역 종료 */
