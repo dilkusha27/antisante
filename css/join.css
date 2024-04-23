@@ -1,0 +1,93 @@
+@charset "UTF-8";
+
+#memberArea {
+    position: relative;
+    display: block;
+    width: 650px;
+    margin: 50px auto; 
+}
+
+#memberArea>h2 {
+    font-size: 35px;
+    border-bottom: 1px solid;
+}
+
+.location {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
+
+.formSign {
+    text-align: right;
+    margin: 25px 30px 0 10px; 
+    font-size: 12px;
+}
+
+fieldset>p {
+    margin: 35px 0;
+    overflow: hidden;
+}
+
+fieldset>p>label {
+    border-radius: 5px;
+    background-color: black;
+    color: #fff;
+    margin-left: 20px;
+    margin-top: 6px;
+    line-height: 36px;
+    text-indent: 25px;
+    font-size: 15px;
+    float: left;
+    width: 200px;
+    height: 36px;
+    overflow: hidden;
+}
+
+label>span {
+    float: right;
+    text-align: right;
+    line-height: 32px;
+    margin-right: 10px;
+    font-size: 25px;
+}
+
+fieldset>p>input {
+    float: right;
+    border-radius: 5px;
+    height: 25px;
+    width: 350px;
+    height: 40px;
+    line-height: 40px;
+    text-indent: 25px;
+    margin-right: 20px;
+}
+
+.idCheck {
+    border-radius: 5px;
+    position: absolute;
+    top: 211px;
+    right: 40px;
+    border: 1px solid #555;
+    width: 70px;
+    height: 24px;
+    line-height: 24px;
+    text-align: center;
+    font-size: 12px;
+    background-color: #555;
+    color: #fff;
+    
+}
+
+.agreeOrNot {
+    border: 1px solid;
+    border-radius: 5px;
+    width: 400px;
+    height: 30px;
+    text-align: center;
+    line-height: 30px;
+}
+
+.agreeOrNot>label:first-child {
+    margin-right: 50px;
+}
