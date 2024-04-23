@@ -19,13 +19,22 @@
 }
 
 .formSign {
+    display: inline-block;
+    width: 300px;
+    height: 25px;
+    line-height: 25px;
     text-align: right;
-    margin: 25px 30px 0 10px; 
-    font-size: 12px;
+    border-bottom: 1px solid #333;
+    position: absolute;
+    top: 45px;
+    right: 10px;
+    margin: 25px 0 0 0; 
+    font-size: 12px;   
+    color: #333;
 }
 
 fieldset>p {
-    margin: 35px 0;
+    margin: 70px 0;
     overflow: hidden;
 }
 
@@ -34,7 +43,7 @@ fieldset>p>label {
     background-color: black;
     color: #fff;
     margin-left: 20px;
-    margin-top: 6px;
+    margin-top: 4px;
     line-height: 36px;
     text-indent: 25px;
     font-size: 15px;
@@ -44,7 +53,7 @@ fieldset>p>label {
     overflow: hidden;
 }
 
-label>span {
+label>span, em>span {
     float: right;
     text-align: right;
     line-height: 32px;
@@ -55,7 +64,6 @@ label>span {
 fieldset>p>input {
     float: right;
     border-radius: 5px;
-    height: 25px;
     width: 350px;
     height: 40px;
     line-height: 40px;
@@ -66,7 +74,7 @@ fieldset>p>input {
 .idCheck {
     border-radius: 5px;
     position: absolute;
-    top: 211px;
+    top: 240px;
     right: 40px;
     border: 1px solid #555;
     width: 70px;
@@ -75,19 +83,52 @@ fieldset>p>input {
     text-align: center;
     font-size: 12px;
     background-color: #555;
+    color: #fff;    
+}
+
+em {
+    font-style: normal;
+    border-radius: 5px;
+    background-color: #20578b;
     color: #fff;
-    
+    margin-left: 20px;
+    margin-top: 4px;
+    line-height: 36px;
+    text-indent: 25px;
+    font-size: 15px;
+    float: left;
+    width: 300px;
+    height: 36px;
 }
 
 .agreeOrNot {
-    border: 1px solid;
     border-radius: 5px;
-    width: 400px;
-    height: 30px;
-    text-align: center;
-    line-height: 30px;
+    border: 2px solid #555;
+    width: 250px;
+    height: 40px;
+    line-height: 40px;
+    text-indent: 35px;
+    position: absolute;
+    bottom: 162px;
+    right: 20px;
 }
 
-.agreeOrNot>label:first-child {
-    margin-right: 50px;
+.agreeOrNot>label {
+    margin: 0 30px 0 0px;
+}
+
+#span1 {
+    font-size: 11px;
+    position: absolute;
+    bottom: 150px;
+    left: 20px;
+}
+
+.btnJoinArea {
+    text-align: center;
+}   
+
+.btnJoinArea>button {
+    width: 100px;
+    height: 50px;
 }
