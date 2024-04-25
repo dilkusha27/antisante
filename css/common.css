@@ -23,6 +23,32 @@ a {
     left: -9999px;
 }
 
+/* 웹 폰트 다운로드 */
+@font-face {
+    font-family: Oswald;
+    src: url(../css/fonts/Oswald-Regular.ttf)format("truetype");
+}
+
+@font-face {
+    font-family: OswaldBold;
+    src: url(../css/fonts/Oswald-Bold.ttf)format("truetype");
+}
+
+@font-face {
+    font-family: NotoSans;
+    src: url(../css/fonts/NotoSansKR-Regular.ttf)format("truetype");
+}
+
+@font-face {
+    font-family: NotoSansBold;
+    src: url(../css/fonts/NotoSansKR-Bold.ttf)format("truetype");
+}
+
+@font-face {
+    font-family: NotoSansEX;
+    src: url(../css/fonts/NotoSansKR-ExtraBold.ttf)format("truetype");
+}
+
 /* 전체적인 레이아웃 */
 
 #header, #middle, #footer {
@@ -69,7 +95,7 @@ a {
     float: right;
     overflow: hidden;
     height: 200px;
-    line-height: 200px;
+    line-height: 220px;
 }
 
 .infoLink li {
@@ -93,13 +119,14 @@ a {
 /* deco1 영역 시작 */
 
 #deco1 {
-    background-image: url(../images/desert-7915031_1280.jpg);
+    background-image: url(../css/images/desert-7915031_1280.jpg);
     background-position: 0 center;
     position: relative;
     margin-top: 20px;
     height: 200px;
     overflow: hidden;
     width: cover;
+    cursor: pointer;
 }
 
 /* deco1 영역 종료 */

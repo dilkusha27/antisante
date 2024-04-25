@@ -4,6 +4,7 @@
     position: relative;
     display: block;
     width: 650px;
+    height: 1000px;
     margin: 50px auto; 
 }
 
@@ -51,6 +52,20 @@ fieldset>p>label {
     width: 200px;
     height: 36px;
     overflow: hidden;
+}
+
+.required {
+    
+}
+
+label> .required {
+    display: inline-block;
+    position: relative;
+    top: -5px;
+    left: -30px;
+    text-align: left;
+    font-size: 7px;
+
 }
 
 label>span, em>span {
@@ -109,7 +124,7 @@ em {
     line-height: 40px;
     text-indent: 35px;
     position: absolute;
-    bottom: 162px;
+    bottom: 157px;
     right: 20px;
 }
 
@@ -120,15 +135,24 @@ em {
 #span1 {
     font-size: 11px;
     position: absolute;
-    bottom: 150px;
+    bottom: 140px;
     left: 20px;
 }
 
 .btnJoinArea {
     text-align: center;
+    position: absolute;
+    bottom: 30px;
+    left: 190px;
 }   
 
 .btnJoinArea>button {
-    width: 100px;
-    height: 50px;
-}
+    font-family: NotoSans;
+    font-size: 16px;
+    width: 120px;
+    height: 40px;
+    border-radius: 5px;
+    margin: 0 10px 0 10px;
+    background-color: #eee;
+    color: #000;    
+}   

@@ -47,6 +47,11 @@ nav>ul>li>a {
                  2px -2px 2px #ccc;
 }
 
+nav>ul>li>a {
+    display: inline-block;
+    width: 150px;
+}
+
 nav>ul>li:hover>a {
     font-size: 25px;
     text-shadow: none;
@@ -60,7 +65,7 @@ nav>ul>li>ul {
     margin-bottom: 10px;
     font-size: 20px;
     top: -60px;
-    left: 150px;
+    left: 135px;
 }
 
 nav>ul>li:hover>ul {
@@ -90,15 +95,29 @@ nav>ul>li>ul>li>a:hover {
     position: absolute;
     top: 100px;
     right: 50px;
-    background-image: url(../images/background1.jpg);
+    background-image: url(../css/images/background1.jpg);
     background-size: cover;
+}
+
+.newBrand {
+    transition: 0.7s;
+}
+
+.discountInfo, .newLookbook {
+    transition: 1s;
+}
+
+.visualBlock>div:hover {
+    z-index: 100;
+    width: 400px;
+    height: 700px;
 }
 
 .newBrand {
     display: inline-block;
     width: 350px;
     height: 650px;
-    background-image: url(../images/arcteryxLookbook.jpg);
+    background-image: url(../css/images/arcteryxLookbook.jpg);
     background-size:  auto;
     background-repeat: no-repeat;
     background-position: 60% 0;
@@ -110,54 +129,13 @@ nav>ul>li>ul>li>a:hover {
                 -10px 10px 10px rgba(0,0,0,0.3);
 }
 
-.discountInfo {
-    position: absolute;
-    top: 120px;
-    left: 340px;
-    display: inline-block;
-    width: 450px;
-    height: 250px;
-    background-image: url(../images/arcteryxLookbook.jpg);
-    background-size:  auto;
-    background-repeat: no-repeat;
-    background-position: 60% 0;
-    z-index: 10;
-    box-shadow: 10px -10px 10px rgba(0,0,0,0.3),
-                -10px 0px 10px rgba(0,0,0,0.3);
-}
-
-.newLookbook {
-    position: absolute;
-    top: 350px;
-    left: 360px;
-    width: 300px;
-    height: 300px;
-    z-index: 15;
-    box-shadow: 10px 10px 10px rgba(0,0,0,0.3),
-                10px 0px 10px rgba(0,0,0,0.3);
-    background-image: url(../images/uniformBridge.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: 40% 50%;
-}
-
-.visualBlock>div {
-    transition: 0.7s;
-}
-
-.visualBlock>div:hover {
-    z-index: 100;
-    width: 400px;
-    height: 700px;
-}
-
 .newBrand>div {
     display: none;
     width: 350px;
     height: 650px;
 }
 .newBrand:hover {
-    background-image: url(../images/arcteryxLookbook.jpg);
+    background-image: url(../css/images/arcteryxLookbook.jpg);
     background-size:  auto;
     background-repeat: no-repeat;
     background-position: 60% 0;
@@ -173,18 +151,100 @@ nav>ul>li>ul>li>a:hover {
     bottom: 100px;
     right: 25px;
     display: inline-block;
-    width: 150px;
-    height: 150px;
+    width: 200px;
+    height: 200px;
 }
 
-.newBrand:hover>.lookbookNotHover{
+.newBrand>.lookbookNotHover{
+    color: white;
+    font-size: 30px;
+    text-align: center;
+    text-decoration: underline;
+    font-family: Oswald;
+    line-height: 650px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.newBrand>.lookbookNotHover{
+    color: white;
+    font-size: 30px;
+    text-align: center;
+    text-decoration: underline;
+    font-family: Oswald;
+    line-height: 650px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.discountInfo {
+    position: absolute;
+    top: 120px;
+    left: 340px;
+    display: inline-block;
+    width: 450px;
+    height: 250px;
+    background-image: url(../css/images/wildBrickSale.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 60% 0%;
+    z-index: 10;
+    box-shadow: 10px -10px 10px rgba(0,0,0,0.3),
+                -10px 0px 10px rgba(0,0,0,0.3);
+}
+
+.discountInfo>.lookbookHover>img {
+    display: none;
+}
+
+.discountInfo>.lookbookNotHover {
+    display: inline-block;
+    line-height: 250px;
+    background-color: rgba(255,255,255,0.5);
+    color: rgb(0, 0, 0);
+    font-size: 30px;
+    text-align: center;
+    text-decoration: underline;
+    font-family: Oswald;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.discountInfo:hover>.lookbookHover>img {
+    display: block;
+    background-color: rgba(0,0,0,0.3);
+    width: 100%;
+    position: relative;
+    top: 230px;
+}
+
+.discountInfo:hover>.lookbookNotHover {
     display: none;
 }
 
 .discountInfo:hover {
-    background-image: url(../images/arcteryxLookbook.jpg);
+    background-image: url(../css/images/wildBrickSale.jpg);
     background-size: cover;
     background-repeat: no-repeat;
+}
+
+.newLookbook {
+    position: absolute;
+    top: 350px;
+    left: 360px;
+    width: 300px;
+    height: 300px;
+    z-index: 15;
+    box-shadow: 10px 10px 10px rgba(0,0,0,0.3),
+                10px 0px 10px rgba(0,0,0,0.3);
+    background-image: url(../css/images/uniformBridge.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 40% 50%;
 }
 
 .newLookbook>.lookbookHover{
@@ -194,7 +254,7 @@ nav>ul>li>ul>li>a:hover {
 .newLookbook:hover {
     top: 100px;
     left: 250px;
-    background-image: url(../images/uniformBridge.jpg);
+    background-image: url(../css/images/uniformBridge.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: 40% 0;
@@ -205,26 +265,31 @@ nav>ul>li>ul>li>a:hover {
     font-size: 30px;
     text-align: center;
     text-decoration: underline;
+    font-family: Oswald;
+    line-height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
 }
 
 .newLookbook:hover>h3, .newLookbook:hover>p {
     display: block;
     color: white;
-    font-size: 15px;
+    font-size: 20px;
     position: relative;
-    top: 10px;
-    left: 10px;
-
+    top: 50px;
+    left: 20px;
 }
 
 .newLookbook:hover>.lookbookNotHover {
     display: none;
 }
 
-
 .newLookbook:hover>h3 {
+    font-family: Oswald;
     text-decoration: underline;
-    font-size: 25px;
+    font-size: 30px;
 }
 
 /* VISUALBLOCK 영역 종료 */
@@ -256,6 +321,11 @@ nav>ul>li>ul>li>a:hover {
 
 #notice ul {
     margin-top: 10px;
+}
+
+#notice .more::before {
+    font-family: Yarndings;
+    content: ''';
 }
 
 #notice li {
@@ -298,6 +368,11 @@ nav>ul>li>ul>li>a:hover {
 .csInfo2 li {
     margin-top: 10px;
     margin-bottom: 10px;
+}
+
+.csInfo2 li strong {
+    text-decoration: underline;
+    letter-spacing: -1px;
 }
 
 /* NOTICE 영역 종료 */
