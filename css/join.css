@@ -52,20 +52,51 @@ fieldset>p>label {
     width: 200px;
     height: 36px;
     overflow: hidden;
+    position: relative;
 }
 
-.required {
-    
+.formSign> .required {
+    width: 12px;
+    height: 12px;
+    display: inline-block;
+    white-space: nowrap;
+    overflow: hidden;
+    position: relative;
+    top: 2px;
+}
+
+.formSign> .required::before {
+    font-family: "Yarndings 20", system-ui;
+    font-weight: 400;
+    font-style: normal;
+    content: 'W';
+    font-size: 14px;
+    position: relative;
+    top: -7px;
+    text-indent: 15px;
+}
+
+label> .required::before {
+    font-family: "Yarndings 20", system-ui;
+    font-weight: 400;
+    font-style: normal;
+    content: 'W';
+    position: relative;
+    left: -25px;
+    top: -12px;
 }
 
 label> .required {
+    font-size: 10px;
+    color: #fff;
+    width: 11px;
+    height: 11px;
     display: inline-block;
+    white-space: nowrap;
+    overflow: hidden;
     position: relative;
     top: -5px;
-    left: -30px;
-    text-align: left;
-    font-size: 7px;
-
+    left: -2px; 
 }
 
 label>span, em>span {

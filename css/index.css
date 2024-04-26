@@ -99,6 +99,10 @@ nav>ul>li>ul>li>a:hover {
     background-size: cover;
 }
 
+.visualBlock {
+    cursor: pointer;
+}
+
 .newBrand {
     transition: 0.7s;
 }
@@ -155,16 +159,8 @@ nav>ul>li>ul>li>a:hover {
     height: 200px;
 }
 
-.newBrand>.lookbookNotHover{
-    color: white;
-    font-size: 30px;
-    text-align: center;
-    text-decoration: underline;
-    font-family: Oswald;
-    line-height: 650px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.newBrand:hover>.lookbookNotHover{
+    display: none;
 }
 
 .newBrand>.lookbookNotHover{
@@ -174,9 +170,9 @@ nav>ul>li>ul>li>a:hover {
     text-decoration: underline;
     font-family: Oswald;
     line-height: 650px;
-    display: flex;
     justify-content: center;
     align-items: center;
+    background-color: rgba(0,0,0,0.5);
 }
 
 .discountInfo {
@@ -257,7 +253,7 @@ nav>ul>li>ul>li>a:hover {
     background-image: url(../css/images/uniformBridge.jpg);
     background-size: cover;
     background-repeat: no-repeat;
-    background-position: 40% 0;
+    background-position: 30% 0;
 }
 
 .newLookbook>.lookbookNotHover {
@@ -267,10 +263,9 @@ nav>ul>li>ul>li>a:hover {
     text-decoration: underline;
     font-family: Oswald;
     line-height: 300px;
-    display: flex;
     justify-content: center;
     align-items: center;
-
+    background-color: rgba(0,0,0,0.2);
 }
 
 .newLookbook:hover>h3, .newLookbook:hover>p {
@@ -289,7 +284,9 @@ nav>ul>li>ul>li>a:hover {
 .newLookbook:hover>h3 {
     font-family: Oswald;
     text-decoration: underline;
-    font-size: 30px;
+    font-size: 40px;
+    letter-spacing: -2px;
+    font-weight: 300;
 }
 
 /* VISUALBLOCK 영역 종료 */
@@ -323,9 +320,21 @@ nav>ul>li>ul>li>a:hover {
     margin-top: 10px;
 }
 
+#notice .more {
+    width: 25px;
+    height: 25px;
+    overflow: hidden;
+    top:12px
+}
+
 #notice .more::before {
-    font-family: Yarndings;
-    content: ''';
+    font-family: "Yarndings 20", system-ui;
+    font-weight: 400;
+    font-style: normal;
+    content: '\'';
+    font-size: 25px;
+    position: relative;
+    left: 5px
 }
 
 #notice li {
